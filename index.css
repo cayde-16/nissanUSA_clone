@@ -34,10 +34,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    width: 97vw;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0;
     
 }
 
@@ -88,7 +88,7 @@ body{
     font-weight: normal;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:872px) {
     .nav-header #logo{
         display: none;
     }
@@ -144,10 +144,10 @@ body{
         width: 96vw;
         padding: 0;
         margin: 0;
-        margin-left: 1rem;
+        padding: 10px;
         top: -1000px;
-        transition: top 300ms ease-in;
-        z-index: -1;
+        transition: top 100ms ease-in;
+        cursor: pointer;
 
     }
 
@@ -182,11 +182,11 @@ body{
         display: flex;
         justify-content: space-between;
         width: 97vw;
-        margin: 10px;
         height: 2rem;
         margin-top: 1rem;  
         align-items: center;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
+        padding-left: 15px;
        
 
     }
@@ -204,6 +204,11 @@ body{
         background: transparent;
     }
 
+    .close span{
+        font-weight: bold;
+        font-size: 22px;
+    }
+
     .toggle-close{
         display: flex;
         flex-direction: column;
@@ -218,6 +223,15 @@ body{
 
     .open-list{
         display: flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+    }
+
+    .open-list span{
+        font-size: 25px;
     }
     
     .toggle-open-list{
