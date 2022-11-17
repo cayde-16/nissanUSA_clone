@@ -145,15 +145,22 @@ body{
         padding: 0;
         margin: 0;
         margin-left: 1rem;
+        top: -1000px;
+        transition: top 300ms ease-in;
+        z-index: -1;
 
+    }
+
+    .show-link{
+        top: 0px;
     }
 
     .navbar-links a{
         display: flex;
+        position: relative;
         justify-content: space-between;
         width: 100%;
         padding: .6rem 0; 
-        height: 3rem;
         margin: 0 10px;
         margin-left: 10px;
         border-bottom: 2px solid white;
@@ -190,6 +197,14 @@ body{
     }
 
     .close{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        background: transparent;
+    }
+
+    .toggle-close{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -200,6 +215,15 @@ body{
     .close:hover{
         cursor: pointer;
     }
+
+    .open-list{
+        display: flex;
+    }
+    
+    .toggle-open-list{
+        display: none;
+    }
+    
 }
 
 
