@@ -7,375 +7,259 @@
 img{
     width: 100%;
     height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-body{
-    background: rgb(233, 232, 232);
+    object-fit: fill;
 }
 
 :root{
-    --max-width: 1520px;
-}
-/* navbar section */
-
-
-.search-bar-div{
-    display: none;
+    --max-width:1520px;
 }
 
+li{
+    list-style-type: none;
+}
+
+/* start of navbar */
 .navbar{
-    display: flex;
-    border-bottom: 1px solid #d8d8d8;
-    width: 100%;
-    position: relative;
-    z-index: 700;
-    top: 0;
-    left: 0;
-}
-
-.icons{
-    display: flex;
+    border-bottom: .4px solid rgb(211, 208, 208);
 }
 .navbar-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 97vw;
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0;
-    height: 7.5rem;
     
 }
-
-.nav-header{
-    margin: 0 16px 0 16px;
-}
-
-#text-logo{
-    display: none;
-}
-
-.navbar-links a #mobile{
-    display: none;
-}
-.navbar-links{
+.nissan--header{
     display: flex;
-    height: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: .3rem;
-    padding: 2rem;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-weight: 800;
-    letter-spacing: .4px;
-
 }
 
+.nav--links{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
 
-.navbar-links a{
+.nav--links li {
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-    gap: 5px;
-    font-size: 17px;
+    padding: 0 10px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 900;
 }
 
-.mobile-menu{
+.lightened{
+    font-weight: lighter;
+    font-size: 13px;
+}
+#en--link{
+    font-weight: lighter;
+    font-size: 14px;
+}
+.nissan--logo{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+.navlinks--mobile{
     display: none;
 }
-.navbar-links a:hover{
+
+.navlink
+
+.nissan--logo:hover{
+    cursor: pointer;
+}
+
+.image--two{
+    display: none;
+}
+
+.icon--links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon--links li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav--links li:hover{
     border-bottom: 4px solid grey;
 }
 
-.navbar-links #lightend:hover{
-    color: rgb(151, 140, 140);
-    transition: color .5ms ease-in;
+#mobile-screen{
+    display: none;
 }
 
-.navbar-links a small{
-    font-weight: normal;
+.hamburger--icon{
+    display: none;
 }
 
-@media screen and (max-width:908px){
-    .navbar-links a{
-        font-size: .9rem;
-        width: 100%;
+.close--icon{
+    display: none;
+}
+@media screen and (max-width:1259px) {
+    #hide--link{
+        display: none;
+    }
+
+    #mobile-screen{
+        display: flex;
+        font-weight: lighter;
+    }
+    
+}
+
+@media screen and (max-width:1199px) {
+    .icon--links{
+        margin: 0 30px;
     }
 }
 
 @media screen and (max-width:767px) {
-    .search-bar-div{
-        display: flex;
-        gap: 2px;
-        width: 96vw;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    .nav--links{
+        display: none;
     }
-    .search-bar-div button span{
-        font-weight: bold;
-        font-size: 20px;
+    .navbar-container{
+        max-height: 3.5rem;
+    }
+    .nissan--logo{
+        padding: 10px;
     }
 
-    .search-bar{
-        width: 100%;
-        padding: 1rem;
-        border: none;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
+    .image--one{
+        display: none; 
     }
-    
-    .search-bar:focus{
-        outline: none;
-    }
-
-    .icons{
-        width: 100%;
-        margin-top: 46vh;
-        align-items: center;
-    }
-
-    .search-bar::placeholder{
-        font-weight: lighter;
-    }
-
-    .search-bar-div button{
-        padding: 1rem;
-        border: none;
-        background: white;
-        width: 70px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-    }
-    .navbar-links a #mobile{
-        display: flex;
-    }
-    .navbar-links .icons a{
+    .navbar{
         border-bottom: none;
     }
-
-    .navbar-links #lightend:first-child{
-        justify-content: flex-start;        
-    }
-
-    .navbar-links #lightend:nth-child(2){
-        justify-content: flex-end;    
-        gap: 20px;
-        padding: 1rem;    
-    }
-    .icons a:nth-child(3){
-        display: none;
-    }
-    .nav-header #logo{
-        display: none;
-    }
-    
-    #text-logo{
+    .image--two{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: black;
+        width: 100%;
         height: 100%;
     }
-    
 
-    .navbar{
-        /* margin-right: 16rem; */
-        border-bottom: none;
-        margin: 0;
-        
-    }
-
-    
-    .nav-header{
-        width: 100vw;
-        margin: 0;
-    }
-   
-    .navbar-container{
-        display: flex;
-        width: 100%;
-        height:5rem;
-        flex-direction: column;
-        justify-content: space-between;
-        /* align-items: center; */
-        margin: 0;
-        padding: 0;
-        z-index: 900;
-    }
-    
-    /* .navbar-container{
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-header{
-        height: auto;
-        margin-right: 2rem;
-    }
-
-    .navbar-links{
-        height: auto;
-        flex-direction: row;
-    } */
-
-    .navbar-links{
-        position: relative;
+    .hamburger--icon{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        width: 96vw;
-        padding: 0;
-        margin: 0;
-        padding: 10px;
-        top: -1000px;
-        height: 100vh;
-        transition: top 100ms ease-in;
-        cursor: pointer;
-        
-
-    }
-
-    .show-link{
-        top: -5px;
-        background-color: rgb(172, 169, 169);
-        width: 100vw;
-        height: 100vh;
-        margin-top: 20px;
-    }
-
-  
-   
-    .navbar-links a{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        width: 100%;
-        padding: .6rem 0; 
-        margin: 0 10px;
-        margin-left: 10px;
-        border-bottom: 2px solid white;
-        color: white;
-    }
-
-    .navbar-links a:hover{
-        border-bottom: 2px solid white;
-    }
-
-    .navbar-header{
-        display: flex;
-        justify-content: center;
-        width: 96vw;
-        margin: 0;
-        
-    }
-
-    .mobile-menu{
-        display: flex;
-        justify-content: space-between;
-        width: 97vw;
-        height: 3rem;
-        margin-top: 1rem;  
-        align-items: center;
-        /* margin-bottom: 1.8rem; */
-        padding-left: 15px;
-       
-
-    }
-
-    .mobile-menu svg{
-        width: auto;
-        height: auto;
-    }
-
-    .close{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        border: none;
-        background: transparent;
-    }
-
-    .close span{
-        font-weight: bold;
-        font-size: 22px;
-    }
-
-    .toggle-close{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: none;
-        background: transparent;
-    }
-
-    .close:hover{
-        cursor: pointer;
-    }
-
-    .open-list{
-        display: flex;
-        flex-direction: column;
-        border: none;
         align-items: center;
         justify-content: center;
-        background: transparent;
-        cursor: pointer;
+        width: 50px;
     }
 
-    .open-list span{
-        font-size: 25px;
-    }
-    
-    .toggle-open-list{
+    .hide--hamburger--icon{
         display: none;
-        cursor: pointer;
     }
+
+    .close--icon{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        width: 50px;
+    }
+
+    .show--close--icon{
+        display: flex;
+    }
+
+    .hamburger--icon span{
+        font-size: 30px;
+    }
+
+    .navlinks--mobile{
+        display: flex;
+        flex-direction: column;
+        background: #f1f1f1;
+        height: 97vh;
+        transform: translateY(-1200px);
+        transition: transform 300ms ease-in;
+    }
+
+    .show--mobile--links{
+        transform: translateY(0px);
+    }
+
+    .navlinks--mobile{
+        width: 100vw;
+        padding: 1rem;
+        height: 95vh;     
+    }
+
+    .navlinks--mobile ul li a{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+   
     
-}
+    .mobile-search-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin: 30px 10px;
+    }
+    .navlinks--mobile{
+        position: relative;
+    }
+    .mobile-search-menu input{
+        height: 51px;
+        width: 83vw;
+        padding: 15px;
+        border: none;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius:7px ;
+    }
 
-/* end of navbar section */
+    .mobile-search-menu button{
+        width: 71px;
+        height: 51px;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        border: none;
+        background: white;
+    }
 
 
 
+    .mobile-search-menu button{
+        height:51px ;
+    }
+
+    .nissan--header{
+        height: 3.5rem;
+        transition: all 300ms ease-in;
+    }
+
+
+    .chat-language{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .chat-language .left-side{
+        display: flex;
+        align-items: center;
+    }
+}   
+/* end of navbar */
 
 /* start of hero section */
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.hero--container{
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0;
 }
-
-.img-container{
-    max-width: var(--max-width);
-}
-.gtr-header{
-    display: flex;
-    gap: 1rem;
-    background: black;
-    width: 100%;
-    height: 4rem;
-    color: white;
-    border-bottom: .1px solid darkgray;
-    align-items: center;
-    justify-content: space-around;
-    max-width: var(--max-width);
-}
-
-
-
-.nav{
-    display: flex;
-    width: 48%;
-    justify-content: space-between;
-}
-
 
 /* end of hero section */
