@@ -18,6 +18,14 @@ li{
     list-style-type: none;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
 /* start of navbar */
 .navbar{
     border-bottom: .4px solid rgb(211, 208, 208);
@@ -37,6 +45,7 @@ li{
     display: flex;
     gap: 1rem;
     cursor: pointer;
+    padding-right: 20px;
 }
 
 .nav--links li {
@@ -145,16 +154,58 @@ li{
         height: 100%;
     }
 
+    .mobile-search-menu input:focus{
+        outline: none;
+    }
+
+    .navlinks--mobile ul li{
+        padding: 10px 0;
+        padding-bottom: 15px;
+        border-bottom: 2px solid white;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .navlinks--mobile ul li a{
+        text-decoration: none;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .bold{
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    .navlinks--mobile ul li span{
+        font-weight: bolder;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .navlinks--mobile ul li small{
+        font-family: system-ui;
+        font-size: 17px;
+        font-weight: light;
+    }
+
     .hamburger--icon{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 50px;
+        cursor: pointer;
     }
 
     .hide--hamburger--icon{
         display: none;
+        
     }
 
     .close--icon{
@@ -164,6 +215,7 @@ li{
         height: 100%;
         align-items: center;
         width: 50px;
+        cursor: pointer;
     }
 
     .show--close--icon{
@@ -179,8 +231,8 @@ li{
         flex-direction: column;
         background: #f1f1f1;
         height: 97vh;
-        transform: translateY(-1200px);
-        transition: transform 300ms ease-in;
+        transform: translateY(-2400px);
+        transition: transform 150ms ease-in;
     }
 
     .show--mobile--links{
@@ -246,13 +298,33 @@ li{
         align-items: flex-end;
         justify-content: space-between;
         height: 100%;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 
     .chat-language .left-side{
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        font-family: 'Cabin', sans-serif;
     }
+
+    .chat-language .left-side small{
+        padding-right:15px ;
+    }
+
+    .chat-language .right-side{
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .chat-language .right-side small{
+        padding: 0 5px;
+        align-items: center;
+        font-family: 'Cabin', sans-serif;
+        letter-spacing: 1px;
+    }
+
 }   
 /* end of navbar */
 
@@ -262,4 +334,66 @@ li{
     margin: 0 auto;
 }
 
+.gtr-header{
+    display: flex;
+    max-width: var(--max-width);
+    height: 55px;
+    font-family: 'Cabin', sans-serif;
+    background: black;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(95, 90, 90);
+}
+
+.gtr--container{
+    display: flex;
+    color: white;
+    align-items: center;
+    /* background: grey; */
+    height: 100%;
+    max-width: var(--max-width);
+    padding:  0;
+    padding-left: 2rem;
+    padding-right: 20px;
+    gap: 16rem;
+    
+}
+
+/* .gtr-left{
+    padding-left: 7rem;
+} */
+.gtr-left a{
+    color:#f1f1f1
+}
+.gtr-right{
+    display: flex;
+    
+}
+
+.gtr-nav-list{
+    display: flex;
+    gap: 35px;
+}
+
+.gtr-nav-list li{
+    padding: 1rem 0;
+}
+
+.gtr-nav-list li:first-child{
+    border-bottom: 1px solid white;
+}
+
+.gtr-nav-list li a{
+    color: white;
+    transition: color 150ms ease-in  ;
+}
+
+.gtr-nav-list li a:hover{
+    color: lightgray;
+}
+
+@media screen and (max-width:959px) {
+    .gtr-right{
+        display: none;
+    }
+}
 /* end of hero section */
