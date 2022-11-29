@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@0,300;0,700;0,800;1,400;1,800&family=Poppins:ital,wght@0,300;0,400;0,700;0,800;1,500;1,600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -119,6 +121,7 @@ a{
     #mobile-screen{
         display: flex;
         font-weight: lighter;
+       
     }
     
 }
@@ -233,6 +236,7 @@ a{
         height: 97vh;
         transform: translateY(-2400px);
         transition: transform 150ms ease-in;
+        z-index: 9999;
     }
 
     .show--mobile--links{
@@ -343,6 +347,31 @@ a{
     justify-content: flex-start;
     border-bottom: 1px solid rgb(95, 90, 90);
 }
+.hero-div .image-container{
+    height:650px;
+    position: relative;
+}
+
+.image-container img{
+    object-fit:cover;
+}
+.image-text{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 4rem;
+    color: white;
+}
+
+.right-text{
+    height: 80px;
+    width: 150px;
+}
 
 .gtr--container{
     display: flex;
@@ -358,9 +387,9 @@ a{
     
 }
 
-/* .gtr-left{
+.gtr-left{
     padding-left: 7rem;
-} */
+} 
 .gtr-left a{
     color:#f1f1f1
 }
@@ -379,7 +408,7 @@ a{
 }
 
 .gtr-nav-list li:first-child{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .gtr-nav-list li a{
@@ -391,9 +420,185 @@ a{
     color: lightgray;
 }
 
+.stats{
+    background: #f1f1f1;
+}
+
+.stats--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 142px;
+   
+}
+
+.stats--container{
+    padding: 15px 0;
+
+}
+
+
+.gtr-about{
+    width: 250px;
+    padding: 0 1rem;
+    border-right: 1px solid lightgrey;
+    align-items: center;
+    justify-content: center;
+}
+
+.gtr-about div .first--text{
+    font-weight: bolder;
+    font-family: 'Cabin', sans-serif;
+}
+
+.gtr-about div .second--text{
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.gtr-about div .second--text small{
+    font-size: 17px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(146, 146, 146);
+    letter-spacing: .7px;
+}
+
+.third--text{
+    font-size: 14px;
+    align-items: center;
+    text-align: start;
+    font-family: 'Open Sans', sans-serif;
+    color: #202020;
+
+}
+
+.gtr-about:last-child{
+    border-right: none;
+}
+
+.left-text p .r-logo{
+    font-size: 10px;
+    text-align: start;
+}
+
+.left-text p{
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 5px;
+}
+
+.left-text h2{
+    font-size: 50px;
+    width: 350px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
+}
+
+.responsive-gtr-text{
+    display: none;
+}
+
+.mobile--responsive--container{
+    display: none;
+}
+
+
 @media screen and (max-width:959px) {
     .gtr-right{
         display: none;
     }
+
+    .gtr-left{
+        padding-left:0px;
+    } 
+
+    .hero-div .image-container{
+        height:auto;
+    }
+
+    .left-text{
+        display: none;
+    }
+
+    .image-text{
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .right-text {
+        position: static;
+        height: auto;
+        width: 25%;
+        padding: 25px;
+    }
+
+    .responsive-gtr-text{
+        display:block;
+        padding: 15px 50px;
+    }
+
+    .responsive-gtr-text p{
+        font-size: 35px;
+        width: 250px;
+        font-family:'Cabin', sans-serif;
+    }
+
+    .responsive-gtr-text h1{
+        font-size: 16px;
+        font-family:'Cabin', sans-serif;
+        font-weight: lighter;
+        margin-bottom: 5px;
+    }
+
+    .responsive--gtr--link{
+        display: flex;
+    }
+
+    .responsive--gtr--link a p{
+        align-items: center;
+    }
+
+    /* change class name */
+    .align{ 
+        display: flex;
+        align-items: center;
+    }
+    .responsive--gtr--link a{
+        padding-left: 20px;
+    }
+    .gtr-left .desktop--text{
+        display: none;
+    }
+    .mobile--responsive--container{
+        display: flex;
+    }
+
+    .mobile--GTR--responsive--text{
+        display: flex;
+        height: 35px;
+        align-items: center;
+        padding-right: 20px;
+        border-right: 1px solid rgb(126, 126, 126);      
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .stats{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:580px) {
+    .right-text{
+        padding: 15px;
+    }
+
+   
 }
 /* end of hero section */
