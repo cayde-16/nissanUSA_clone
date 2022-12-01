@@ -587,9 +587,9 @@ a{
 
 
 @media screen and (max-width:375px) {
-    .stats{
+    /* .stats{
         display: none;
-    }
+    } */
 }
 
 
@@ -599,6 +599,131 @@ a{
         padding: 15px;
     }
 
-   
+   .responsive-gtr-text p{
+    width: auto;
+   }
+
+   .stats--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10px;
+   }
+
+   .gtr-about {
+    width: auto;
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+    margin: 0;
+    width: auto;
+
+    }     
+    .gtr-about:nth-child(1) div{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+
+    }
+
+    .gtr-about:nth-child(2) div{
+        padding-bottom: 5px;
+        padding-left: 10px;
+        border-right: none;
+        padding-top: 5px;
+    }
+
+
+    .gtr-about:nth-child(2){
+        border-right: none;
+    }
+
+   .gtr-about:nth-child(3){
+    padding-top: 10px;
+    border-bottom: none;
+    padding-left: 15px;
+    padding-bottom: 20px;
+   }
+
+
 }
+
+.trade--section{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.trade--container{
+    display: flex;
+    max-width: var(--max-width);
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.trade--container a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid  lightgrey;
+    width: 279px;
+    height: 105px;
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.trade--container a span{
+    color: white;
+    padding: 5px;
+    border-radius: 15%;
+    background-color: #202020;
+    transition: all 100ms ease-in;
+}
+
+.trade--container a:hover{
+    background-color: red;
+    color: white;
+    transition: all 100ms ease-in;
+}
+
+.trade--container a:hover span{
+    color: black;
+    background-color: white;
+    transition: all 100ms ease-in;
+}
+
+
+@media screen and (max-width:959px) {
+    .trade--container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90vw;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 12px 10px;
+    }
+
+    .trade--container a{
+        height: auto;
+        width: auto;
+        padding: 10px;
+        font-family: 'Open Sans', sans-serif;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 1rem;
+        height: 50px;
+
+
+    }
+
+    
+    
+}
+
+
 /* end of hero section */
