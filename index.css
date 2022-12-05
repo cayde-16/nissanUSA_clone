@@ -678,6 +678,7 @@ a{
 .trade--container a span{
     color: white;
     padding: 5px;
+    margin-bottom: 10px;
     border-radius: 15%;
     background-color: #202020;
     transition: all 100ms ease-in;
@@ -717,13 +718,207 @@ a{
         align-items: center;
         gap: 1rem;
         height: 50px;
+    }   
+    .trade--container a span{       
+        margin-bottom:0px;
+    }
+}
 
 
+
+.first__gtr__image{
+    position: relative;
+    margin-bottom: 20px;
+   
+    margin: 0 auto;
+    padding: 0 15px;
+
+  
+
+    
+}
+
+
+
+/* .first__gtr__image img{
+    height: 100%;
+} */
+
+.gtr-images{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+}
+
+.gtr__cards__container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.gtr--card{
+    position: relative;
+    padding: 0 15px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.performance--container{
+    background: black;
+    /* height: 20vh; */
+    padding: 30px;
+    padding-bottom: 80px;
+    margin-top: -4px;
+    transition: all 200ms ease-in-out;
+
+}
+
+.performance--container:hover{
+    background: rgb(36, 35, 35);
+    cursor: pointer;
+}
+
+.performance--container p{
+    color: white;
+    max-width: 450px;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 10px;
+}
+
+
+.performance--container button{
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+}
+
+.performance--container button a{
+    color: black;
+}
+
+
+
+.gtr--power--soul{
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    width: 50%;
+    height: auto;
+    border-top: 3px solid white;
+    border-radius: 1px;
+}
+
+.gtr--power--soul h2{
+    color: white;
+    width: 70%;
+    font-size: 35px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
+    padding-top: 15px;
+}
+
+
+
+.performance--card{
+    background: black;
+    margin-top: -4px;
+    /* height:80%; */
+    padding: 30px;
+}
+
+.performance--card p{
+    font-size: 14px;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.performance--card button{
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    font-family: 'Cabin', sans-serif;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.performance--card button a{
+    color:black;
+}
+
+.gtr--image--text{
+    position: absolute;
+    color: white;
+    top: 5%;
+    padding: 0 15px;
+    margin: 0 30px;
+    max-width: 570px;
+    border-top: 4px solid white;
+}
+
+.gtr--image--text h2{
+    font-size: 32px;
+}
+
+
+
+@media screen and (max-width:580px) {
+    .gtr__cards__container{
+        flex-direction: column;
+    }
+
+    .first__gtr__image{
+        width: 100%;
+    }
+
+    .first__gtr__container{
+        height: 60vh;
     }
 
     
+    .first__gtr__image img{
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;    
+        vertical-align: middle;
+    } 
+
+    .gtr--power--soul{
+        left: 8%;
+    }
+    .gtr--power--soul h2{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .gtr--power--soul div{
+        position: sticky;
+
+    }
+
+    .performance--container button{
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 10px;
+    }
     
+    .performance--card button{
+      justify-content: space-between;
+      width: 100%;
+      padding-right: 10px;
+    }
+
 }
+
 
 
 /* end of hero section */
