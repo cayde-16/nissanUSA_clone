@@ -5,17 +5,21 @@ console.log(webSite)
 const hamburgerIcon = document.querySelector('.hamburger--icon');
 const navbarMobileLinks = document.querySelector('.navlinks--mobile');
 const closeIcon = document.querySelector('.close--icon');
+const navbarContainer = document.querySelector('.navbar-container ')
 
 hamburgerIcon.addEventListener("click", () => {
     navbarMobileLinks.classList.toggle('show--mobile--links');
     hamburgerIcon.classList.toggle('hide--hamburger--icon');
     closeIcon.classList.toggle('show--close--icon')
+    navbarContainer.classList.toggle('nissan--sticky');
 })
 
 closeIcon.addEventListener('click', () => {
     navbarMobileLinks.classList.toggle('show--mobile--links');
     hamburgerIcon.classList.toggle('hide--hamburger--icon');
-    closeIcon.classList.toggle('show--close--icon')
+    closeIcon.classList.toggle('show--close--icon');
+    navbarContainer.classList.toggle('nissan--sticky');
+
 })
 
 

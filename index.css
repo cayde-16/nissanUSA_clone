@@ -161,6 +161,17 @@ a{
         outline: none;
     }
 
+    .navlinks--mobile{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
     .navlinks--mobile ul li{
         padding: 10px 0;
         padding-bottom: 15px;
@@ -231,6 +242,7 @@ a{
 
     .navlinks--mobile{
         display: flex;
+        position: fixed;
         flex-direction: column;
         background: #f1f1f1;
         height: 97vh;
@@ -241,12 +253,21 @@ a{
 
     .show--mobile--links{
         transform: translateY(0px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .navlinks--mobile{
         width: 100vw;
         padding: 1rem;
-        height: 95vh;     
+        height: 95vh; 
+        position: fixed;    
     }
 
     .navlinks--mobile ul li a{
@@ -294,6 +315,14 @@ a{
     .nissan--header{
         height: 3.5rem;
         transition: all 300ms ease-in;
+    }
+
+    .nissan--sticky{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background-color: white;
     }
 
 
