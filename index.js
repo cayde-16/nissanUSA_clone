@@ -5,7 +5,20 @@ console.log(webSite)
 const hamburgerIcon = document.querySelector('.hamburger--icon');
 const navbarMobileLinks = document.querySelector('.navlinks--mobile');
 const closeIcon = document.querySelector('.close--icon');
-const navbarContainer = document.querySelector('.navbar-container ')
+const navbarContainer = document.querySelector('.navbar-container ');
+
+
+
+const caruselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img')
+
+
+const prevBTN = document.querySelector('#prevBtn');
+const nextBTN = document.querySelector('#nextBtn');
+
+
+
+
 
 hamburgerIcon.addEventListener("click", () => {
     navbarMobileLinks.classList.toggle('show--mobile--links');
@@ -21,6 +34,50 @@ closeIcon.addEventListener('click', () => {
     navbarContainer.classList.toggle('nissan--sticky');
 
 })
+
+
+let counter = 1;
+const size = carouselImages[0].clientWidth;
+
+caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+
+nextBTN.addEventListener("click", ()=>{
+    if(counter >= carouselImages.length - 1){
+        return
+    }
+    caruselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter++
+    caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+
+prevBTN.addEventListener("click", ()=>{
+    if(counter <= 0){
+        return
+    }
+    caruselSlide.style.transition = 'transform 0.4s ease-in-out';
+    counter--
+    caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+})
+
+
+caruselSlide.addEventListener('transitionend', ()=>{
+   
+    if(carouselImages[counter].id === 'lastClone'){
+        caruselSlide.style.transition = 'none';
+        counter = carouselImages.length -2;
+        caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+
+
+    if(carouselImages[counter].id === 'firstClone'){
+        caruselSlide.style.transition = 'none';
+        counter = carouselImages.length - counter;
+        caruselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    }
+})
+
 
 
 // const mobileMenu = document.querySelector('.close');

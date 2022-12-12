@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     effect: 'cube',
     longSwipes:false,
     grabCursor:true,
-    edgeSwipeDetection:'prevent',
+    // edgeSwipeDetection:'prevent',
     loop: true,
 
 
@@ -21,5 +21,15 @@ const swiper = new Swiper('.swiper', {
     },
 
     // And if we need scrollbar
+
+
+
     
 });
+
+
+
+
+
+
+const x = window.matchMedia("(max-width:580px");
