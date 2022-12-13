@@ -5,7 +5,7 @@ const swiper = new Swiper('.swiper', {
     effect: 'cube',
     longSwipes:false,
     grabCursor:true,
-    // edgeSwipeDetection:'prevent',
+    edgeSwipeDetection:'prevent',
     loop: true,
 
 

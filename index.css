@@ -1324,3 +1324,134 @@ a{
 
 
 /* end of sold out nismo */
+
+
+/* start of promotion section */
+
+.promotion{
+    margin-top: 5rem;
+}
+
+.promotion-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 3px solid black;
+}
+
+
+.promotion-container h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 35px;
+    color:#343434;
+}
+
+
+.mobility--assist--program{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+
+.mobility--image--container{
+    height: 350px;
+    margin-bottom: 20px;
+    max-width: 450px;
+    border-bottom: 3px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobility--image--container img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+.mobility-assist-text{
+    max-width: 450px;
+}
+
+
+.mobility-assist-text h2{
+    margin-bottom: 15px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: lighter;
+    letter-spacing: .7px;
+}
+
+
+.mobility-assist-text p{
+    font-family: 'Cabin', sans-serif;
+    font-weight: light;
+    color: #5c5c5c;
+    font-weight: 13px;
+    margin-right:20px;
+    margin-bottom: 10px
+}
+
+.mobility--assist--program a{
+    border: 1.5px solid black;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    justify-content: space-between;
+    color: black;
+    padding: 10px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.mobility--assist--program a p{
+    margin: 0;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.mobility--assist--program a span{
+    font-weight: bold;
+}
+
+@media screen and (max-width:580px) {
+
+    .promotion-container h1{
+        margin-left: 10px;
+    }
+
+    .mobility--image--container img{
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+    }
+
+    .promotion-container{
+        max-width: auto;
+    }
+
+    .mobility--image--container{
+        height: auto;
+        max-width: 100%;
+    }
+
+    .mobility--assist--program{
+        width: 95vw;
+        max-width: 100%;
+
+    }
+
+    .mobility-assist-text{
+        max-width: 100%;
+    }
+
+    .promotion-container{
+        border-bottom: 3px solid lightgray;
+    }
+    
+}
+/* end of promotion section */
