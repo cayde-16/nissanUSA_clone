@@ -1454,4 +1454,95 @@ a{
     }
     
 }
+
+.shopNissan--container{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.shopNissan--container h1{
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+}
+
+.card--items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 40px;    
+}
+
+
+.shopNissan--links{
+    border: 1px solid grey;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 281px;
+    height: 100px;
+    gap: 10px;
+    transition: color 100ms ease-in;
+    transition: background-color 100ms ease-in;
+
+}
+
+.shopNissan--links span{
+    background: black;
+    color: white;
+    font-size: 32px;
+    border-radius:50%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopNissan--links p{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.shopNissan--links:hover {
+    background-color: red;
+    border:1px solid red;
+}
+
+.shopNissan--links:hover p{
+    color: white;
+}
+
+.shopNissan--links:hover span{
+    background: white;
+    color: red;
+}
+
+
+@media screen and (max-width:959px) {
+    .card--items{
+        flex-direction: column;
+    }
+    
+    .shopNissan--links{
+        width: 98vw;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px 10px;
+        gap: 2rem;
+    }
+
+    .shopNissan--links span{
+        font-size: 20px;
+    }
+
+    .shopNissan--container h1{
+        padding-left:10px ;
+    }
+}
 /* end of promotion section */
