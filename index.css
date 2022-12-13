@@ -8,7 +8,6 @@
 
 body{
     overflow-x: hidden;
-    margin-bottom: 500px;
 }
 
 img{
@@ -1455,6 +1454,11 @@ a{
     
 }
 
+
+.shopNissan{
+    margin-bottom: 6rem;
+}
+
 .shopNissan--container{
     max-width: 1200px;
     margin: 0 auto;
@@ -1546,3 +1550,157 @@ a{
     }
 }
 /* end of promotion section */
+
+
+/* start of footer section */
+
+.footer-container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.top-footer{
+    background-color: #5c5c5c;
+    
+}
+
+.navigation-tabs{
+    display: flex;
+    padding: 25px;
+    padding-left:19px;
+    justify-content: flex-start;
+    gap: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.nav--footer--links{
+    display: flex;
+    color: #c1c1c1;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav--footer--links p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.nav--footer--links span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.active{
+    color: white;
+}
+
+
+.middle-footer{
+    background: black;
+    padding-bottom: 2rem;
+}
+
+
+.col--header{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer--cols{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer--cols--container{
+    margin-top: 20px;
+}
+
+.socials{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.social--icons{
+   display: flex;
+   font-size: 25px;
+   width: 200px;
+   align-items: center;
+}
+
+.social--icons a{
+    color: darkgrey;
+    padding-right: 20px;
+    transition: color 100ms ease-in;
+}
+
+.social--icons a:hover{
+    color: white;
+}
+
+
+.socials h1{
+    color: white;
+}
+
+.col-list ul .footer--list--links{
+    padding-top: 20px;
+}
+
+.footer--list--links a{
+    color: #c1c1c1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+.bottom-footer-container{
+    border-top: 1px solid white;
+    background: black;
+}
+
+.bottom--footer--links{
+    display: flex;
+    padding:40px 0px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.left--links--wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.left--links--wrapper a{
+    color: darkgrey;
+    padding-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    
+}
+
+
+.boxed{
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.right--links--wrapper, .right--links--wrapper a{
+    color: darkgray;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* end of footer section */
