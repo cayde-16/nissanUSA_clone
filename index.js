@@ -45,7 +45,6 @@ const gtrHeader = document.querySelector('.gtr-header')
 document.addEventListener('scroll', ()=>{
     let scroll_position = window.scrollY;
 
-    console.log(scroll_position)
 
     if(scroll_position > 150){
         gtrHeader.classList.add('gtr-header--fixed')
