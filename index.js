@@ -16,6 +16,52 @@ const carouselImages = document.querySelectorAll('.carousel-slide img')
 const prevBTN = document.querySelector('#prevBtn');
 const nextBTN = document.querySelector('#nextBtn');
 
+// expands the footer list down for mobile users
+
+// Row 1
+const expandMoreChevron = document.querySelector('#footer--expand');
+const footerList = document.querySelector('.col-list');
+
+// Row 2
+const expandMoreChevron2 = document.querySelector('#footer--expand-2');
+const footerList2 = document.querySelector('#col-list-2');
+
+
+// Row 3
+const expandMoreChevron3 = document.querySelector('#footer--expand-3');
+const footerList3 = document.querySelector('#col-list-3');
+
+
+// Row 4
+const expandMoreChevron4 = document.querySelector('#footer--expand-4');
+const footerList4 = document.querySelector('#col-list-4');
+
+
+// ----------------------------------------------------------
+
+expandMoreChevron4.addEventListener('click', ()=>{
+    footerList4.classList.toggle('show--footer--list')
+    expandMoreChevron4.classList.toggle('rotate--chevron')
+})
+
+
+expandMoreChevron3.addEventListener('click', ()=>{
+    footerList3.classList.toggle('show--footer--list')
+    expandMoreChevron3.classList.toggle('rotate--chevron')  
+})
+
+
+expandMoreChevron2.addEventListener("click", ()=>{
+    footerList2.classList.toggle('show--footer--list')
+    expandMoreChevron2.classList.toggle('rotate--chevron')   
+})
+
+
+
+expandMoreChevron.addEventListener('click', ()=>{   
+    footerList.classList.toggle('show--footer--list')
+    expandMoreChevron.classList.toggle('rotate--chevron')
+})
 
 
 

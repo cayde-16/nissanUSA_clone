@@ -1651,9 +1651,16 @@ a{
     color: white;
 }
 
+
+
 .col-list ul .footer--list--links{
     padding-top: 20px;
+    /* height: 0;
+    overflow: hidden; */
 }
+
+
+/* add 'height:0; and overflow hidden above' */
 
 .footer--list--links a{
     color: #c1c1c1;
@@ -1703,4 +1710,105 @@ a{
     align-items: center;
 }
 
+.chevron{
+    display: none;
+}
+
+
+@media screen and (max-width:580px) {
+
+    .chevron{
+        display: block;
+        color: red;
+        transition: all 100ms ease-in;
+    }
+
+    .rotate--chevron{
+        -ms-transform: rotate(-180deg);
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        transition: all 100ms ease-in-out;
+        color: white;
+    }
+
+    .chevron span{
+        font-size: 34px;
+    }
+    .col-list{
+        padding-top: 20px;
+        height: 0;
+        overflow: hidden;
+        /* padding-bottom: 20px; */
+        padding-left: 10px;
+    }
+
+    .footer--list--links:last-child{
+        padding-bottom: 20px;
+    }
+
+    .show--footer--list{
+        height: auto;
+        overflow: none;
+        transition: all 100ms ease-in-out;
+        
+    }
+
+    .col--header{
+        padding-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        margin-bottom: 0px;
+    }
+    .socials{
+        padding-left: 10px;
+    }
+
+    .socials .col--header{
+        padding-left: 0px;
+        padding-bottom: 15px;
+    }
+    .footer--cols{
+        flex-direction: column;
+        gap: 0px;
+        padding-left: 0px;
+    }
+    
+    .footer--cols--container {
+        align-items: center;
+        border-bottom: 2px solid white;
+        width: 100%;
+    }
+    
+    .bottom--footer--links{
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .left--links--wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        border-bottom: 3px solid white;
+    }
+
+    .left--links--wrapper a{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .left--links--wrapper a:last-child{
+        padding-bottom: 15px;
+    }
+
+
+    .right--links--wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-left: 15px;
+    }
+
+}
 /* end of footer section */
