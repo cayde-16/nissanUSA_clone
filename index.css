@@ -379,6 +379,15 @@ a{
     background: black;
     justify-content: flex-start;
     border-bottom: 1px solid rgb(95, 90, 90);
+    
+}
+
+
+.gtr-header--fixed{
+    position: fixed;
+    z-index: 990;
+    width: 100%;
+    top: 0;
 }
 .hero-div .image-container{
     height:650px;
@@ -537,6 +546,7 @@ a{
 .mobile--responsive--container{
     display: none;
 }
+
 
 
 @media screen and (max-width:959px) {

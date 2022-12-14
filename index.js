@@ -38,6 +38,22 @@ const footerList4 = document.querySelector('#col-list-4');
 
 
 // ----------------------------------------------------------
+// gtr-header
+
+const gtrHeader = document.querySelector('.gtr-header')
+
+document.addEventListener('scroll', ()=>{
+    let scroll_position = window.scrollY;
+
+    console.log(scroll_position)
+
+    if(scroll_position > 150){
+        gtrHeader.classList.add('gtr-header--fixed')
+    }else{
+        gtrHeader.classList.remove('gtr-header--fixed')
+    }
+
+})
 
 expandMoreChevron4.addEventListener('click', ()=>{
     footerList4.classList.toggle('show--footer--list')
