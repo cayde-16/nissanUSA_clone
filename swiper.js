@@ -30,6 +30,4 @@ const swiper = new Swiper('.swiper', {
 
 
 
-
-
 const x = window.matchMedia("(max-width:580px");

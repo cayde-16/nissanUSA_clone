@@ -1,7 +1,6 @@
 const webSite = 'https://www.nissanusa.com/vehicles/sports-cars/gt-r.html' 
 console.log(webSite)
 
-
 const hamburgerIcon = document.querySelector('.hamburger--icon');
 const navbarMobileLinks = document.querySelector('.navlinks--mobile');
 const closeIcon = document.querySelector('.close--icon');
